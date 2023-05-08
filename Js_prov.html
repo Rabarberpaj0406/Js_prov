@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+ <p id="demo">Hallå</p>
+
+ <img id="img1" src="estrella-hot-sweet-chili-chips-275-g.jpg" alt="img">
+
+ <br> <br>
+
+ <input id="textfalt" type="text">
+
+ <button onclick="visa_taxtfalt()">Comfirm</button>
+
+    <script>
+
+      // upp 1
+      let num_1 = Number(prompt("Skriv ett tal: "));
+      let num_2 = Number(prompt("Skriv ett till tal: "));
+
+      function addition(num1, num2){
+        let summa = num1 + num2;
+        alert("Om man adderar " + num1 + " med " + num2 + " så får man " + summa);
+      }
+
+      addition(num_1, num_2)
+
+
+      // upp 2
+      document.getElementById("demo").innerHTML = "Hej";
+
+      // upp 3
+      function andra_src(){
+        document.getElementById("img1").src = "bild.jpg";
+      }
+
+      andra_src();
+
+
+      // upp 4
+      let array_tal = [10, 20 , 30, 40, 50];
+
+      function array_sub(array1){
+
+       let tom_array = [];
+    
+       for(i = 0; i < array1.length; i++)
+       {
+         tom_array.push(array1[i] - 1);  
+       }
+
+       alert(tom_array)
+        
+      }
+
+      array_sub(array_tal);
+
+      // uppgift 5
+      function visa_taxtfalt(){
+        alert(document.getElementById("textfalt").value)
+       }
+      
+    </script>
+ 
+    
+    
+</body>
+</html>
